@@ -7,8 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForUsingTest", "ForUsingTes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "createTest", "createTest\createTest.vcxproj", "{0AE07B97-E4C0-4E05-9C8A-A789C65BB661}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lenght_vecTest", "lenght_vecTest\lenght_vecTest.vcxproj", "{D9D65869-38C9-47FC-9034-F3B473E3923F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,14 +31,6 @@ Global
 		{0AE07B97-E4C0-4E05-9C8A-A789C65BB661}.Release|x64.Build.0 = Release|x64
 		{0AE07B97-E4C0-4E05-9C8A-A789C65BB661}.Release|x86.ActiveCfg = Release|Win32
 		{0AE07B97-E4C0-4E05-9C8A-A789C65BB661}.Release|x86.Build.0 = Release|Win32
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Debug|x64.ActiveCfg = Debug|x64
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Debug|x64.Build.0 = Debug|x64
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Debug|x86.ActiveCfg = Debug|Win32
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Debug|x86.Build.0 = Debug|Win32
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Release|x64.ActiveCfg = Release|x64
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Release|x64.Build.0 = Release|x64
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Release|x86.ActiveCfg = Release|Win32
-		{D9D65869-38C9-47FC-9034-F3B473E3923F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

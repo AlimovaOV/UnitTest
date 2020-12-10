@@ -62,7 +62,7 @@ int main()
     int k;
     cin >> k;
     stringstream ss;
-    int a, b, c, d;
+    double a, b, c, d;
     for (int i = 0; i < k - 1; i++) {
         cin >> a >> b >> c >> d;  // вводим координаты начала и конца
                                   // отрезка с клавиатуры

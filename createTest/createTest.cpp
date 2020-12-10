@@ -8,8 +8,8 @@ namespace Microsoft {
 			template <> static std::wstring ToString(const vec& q) {
 				wstringstream s;
 				for (auto i = q.begin(); i != q.end(); i++) {
-					s << "{{" << i->first.first << ", " << i->first.second << "},{";
-					s << i->second.first << ", " << i->second.second << "}}, ";
+					s << "{ {" << i->first.first << ", " << i->first.second << "}, {";
+					s << i->second.first << ", " << i->second.second << "} }, ";
 				}			
 				return s.str();
 			}
@@ -76,15 +76,16 @@ namespace CreateTest
 			vec t_exprcted = { { {-5, 0}, {-2, 4} }, { {-1, 0}, {0, 1} }, { {1, 0}, {5, 0} } };
 			Assert::AreEqual(create(ss), t_exprcted);
 		}
-/*
-		TEST_METHOD(Test_compare_vector_double)
+
+
+		TEST_METHOD(TestMethod_compare_vector_double)
 		{
 			stringstream ss;
-			ss << "-5.7 0.25 -2.27 4.44 -1 0 0 1 1 0 5 0";
-			vec t_exprcted = { { {-5.7, 0.25}, {-2.27, 4.44} }, { {-1, 0}, {0, 1} }, { {1, 0}, {5, 0} } };
+			ss << "-5.7 0.25 -2.27 4.44 -1.51 0.25 0.0 1.0";
+			vec t_exprcted = { { {-5.7, 0.25}, {-2.27, 4.44} }, { {-1.51, 0.25}, {0.0, 1.0} }};
 			Assert::AreEqual(create(ss), t_exprcted);
 		}
-*/
+/*
 		TEST_METHOD(TestMethod4)
 		{
 			stringstream ss;
@@ -99,5 +100,6 @@ namespace CreateTest
 			vec t_exprcted = { { {-5, 0}, {-2, 4} }, { {-1, 0}, {0, 1} }, { {1, 0}, {5, 0} } };
 			Assert::AreEqual(create(ss), t_exprcted);
 		}
+*/
 	};
 }
