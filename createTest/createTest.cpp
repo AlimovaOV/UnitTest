@@ -85,21 +85,18 @@ namespace CreateTest
 			vec t_exprcted = { { {-5.7, 0.25}, {-2.27, 4.44} }, { {-1.51, 0.25}, {0.0, 1.0} }};
 			Assert::AreEqual(create(ss), t_exprcted);
 		}
-/*
-		TEST_METHOD(TestMethod4)
+
+		TEST_METHOD(TestMethod_empty_vector)
 		{
 			stringstream ss;
-			ss.setstate (ios::eofbit);
+			ss <<"";						// записать в поток пустую строку
+			ss.peek();						//прочитать символ из потока, не извлекая его, 
+											//поскольку символов нет, то будет установлен бит eof
+
+			//ss.setstate(ios::eofbit);		// установить бит eof, именно его
+											// состояние проверяет функция еоf()
 			vec t_exprcted = {};
 			Assert::AreEqual(create(ss), t_exprcted);
 		}
-		TEST_METHOD(TestMethod5)
-		{
-			stringstream ss;
-			ss << "-5 0 -2 4 -1 0 0 1 1 0 5 0";
-			vec t_exprcted = { { {-5, 0}, {-2, 4} }, { {-1, 0}, {0, 1} }, { {1, 0}, {5, 0} } };
-			Assert::AreEqual(create(ss), t_exprcted);
-		}
-*/
 	};
 }

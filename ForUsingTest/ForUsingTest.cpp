@@ -9,9 +9,9 @@
 using namespace std;
 typedef pair<double, double> point;
 typedef vector < pair< point, point > > vec;
-typedef vector < double> lvec;
+typedef vector < double> len_vec;
 
-bool operator == (lvec a, lvec b) {
+bool operator == (len_vec a, len_vec b) {
     if (a.size() == b.size()) {
         auto j = b.begin();
         for (auto i = a.begin(); (i != a.end()); i++) {
@@ -46,19 +46,17 @@ vec create(stringstream& lcin) {
     }
     return rez;
 }
-lvec lenght_vec(vec a) {
-    lvec rez;
+len_vec lenght_vec(vec a) {
+    len_vec rez;
     double r;
     for (auto i = a.begin(); i != a.end(); i++) {
         r = sqrt(pow((*i).first.first - (*i).second.first, 2) + pow((*i).first.second - (*i).second.second, 2));
-        //rez.push_back( (float) ( (int)(r * 100000)) /100000  );
         rez.push_back(r);
     }
     return rez;
 }
 
-int main()
-{
+int main() {
     int k;
     cin >> k;
     stringstream ss;
