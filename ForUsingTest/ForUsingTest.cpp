@@ -21,7 +21,7 @@ bool operator == (lvec a, lvec b) {
     }
     else return false;
 }
-/*
+
 bool operator == (vec a, vec b) {
     if (a.size() == b.size()) {
         auto j = b.begin();
@@ -36,7 +36,7 @@ bool operator == (vec a, vec b) {
     }
     else return false;
 }
-*/
+
 vec create(stringstream& lcin) {
     vec rez;
     while (!lcin.eof()) {
