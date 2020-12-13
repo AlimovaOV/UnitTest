@@ -50,14 +50,15 @@ len_vec lenght_vec(vec a) {
     len_vec rez;
     double r;
     for (auto i = a.begin(); i != a.end(); i++) {
-        r = sqrt(pow((*i).first.first - (*i).second.first, 2) + pow((*i).first.second - (*i).second.second, 2));
+        r = sqrt(pow((*i).first.first - (*i).second.first, 2) + 
+                 pow((*i).first.second - (*i).second.second, 2));
         rez.push_back(r);
     }
     return rez;
 }
 
 int main() {
-    int k;
+    int k;      
     cin >> k;
     stringstream ss;
     double a, b, c, d;
